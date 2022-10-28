@@ -46,17 +46,186 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: var(--ff-primary);
   max-width: 1600px;
   background: var(--clr-bgmain-white);
-  margin: 0;
+  margin: auto;
+}
+
+header {
+  background: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 h1 {
-  color: rgb(246, 242, 242);
-  background: var(--clr-accent-orange);
-  padding: 50px;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background: var(--clr-primary-orange);
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid var(--clr-primary-orange);
+  border-radius: 25px;
+}
+
+.container {
+  width: 1160px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul.nav-list {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  gap: 58px;
+}
+
+ul.nav-list li {
+  flex-shrink: 0;
+}
+
+ul.nav-list li:last-child {
+  margin-left: 438px;
+  flex-shrink: 0;
+}
+
+div.main-slide {
+  background-image: url(/src/images/Giant\ Panda.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+}
+
+.slide .orange-elipse {
+  position: relative;
+  left: 807px;
+  top: 12px;
+}
+
+.slide .slider-heading {
+  color: white;
+  font-size: 106.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  margin: 0;
+  top: 86px;
+  left: 880px;
+  line-height: 79.87px;
+  text-align: center;
+}
+
+.slider-heading span {
+  color: var(--clr-accent-yellow);
+}
+
+.slide button {
+  padding: 16px 98px;
+  position: absolute;
+  left: 983px;
+  top: 564px;
+}
+
+.backstage {
+  gap: 87px;
+  padding-top: 140px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: var(--fw-main-reg);
+  line-height: 120%;
+  color: var(--clr-primary-black);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: var(--fw-main-reg);
+  line-height: 28.8px;
+  color: var(--clr-primary-black);
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+.backstage p {
+  font-size: 16px;
+  font-weight: var(--fw-main-reg);
+  color: var(--clr-primary-black);
+  line-height: 22.4px;
+  margin-top: 0;
+  margin-bottom: 54px;
+}
+
+.column {
+  flex: 1;
+  gap: 87px;
+}
+
+.cards {
+  gap: 28px;
+  position: relative;
+}
+
+div.card {
+  border: 1px solid #fa6f32;
+  border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 2em;
+  height: 1em;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: hsl(120 100% 20% / 1);
+  border: 0.25em solid hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+}
+.scroll {
+  max-width: 1160px;
+  display: grid;
+  gap: 0.5em;
+  grid-auto-flow: column;
+  grid-auto-columns: 75%;
+  padding: 0.5em;
+  overflow-x: scroll;
+  background: #d3fdbe;
+  border-radius: 1em;
+  position: relative;
+}
+
+.scroll > div {
+  background: hsl(0 0% 90%);
+  border-radius: 1em;
+  border: 0.5em solid hsl(0 0% 60%);
+  padding: 1em;
 }
