@@ -41,6 +41,7 @@
   --fw-header-bold: 700;
   --fw-main-reg: 400;
   --fw-body-med: 500;
+  --fw-body-sm: 300;
 }
 
 html,
@@ -82,6 +83,51 @@ button {
   text-transform: uppercase;
   border: 1px solid var(--clr-primary-orange);
   border-radius: 25px;
+  width: 298px;
+  height: 54px;
+}
+h2 {
+  font-size: 48px;
+  font-weight: var(--fw-main-reg);
+  line-height: 120%;
+  color: var(--clr-primary-black);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: var(--fw-main-reg);
+  line-height: 46.8px;
+  color: var(--clr-primary-black);
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: var(--fw-main-reg);
+  line-height: 28.8px;
+  color: var(--clr-primary-black);
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+}
+
+table {
+  table-layout: auto;
+  width: 340px;
+  margin: 2px 2px 8px 10px;
+}
+
+tr {
+  height: 40px;
+}
+
+td p {
+  margin: 0;
 }
 
 .container {
@@ -150,24 +196,7 @@ div.main-slide {
 .backstage {
   gap: 87px;
   padding-top: 140px;
-}
-
-h2 {
-  font-size: 48px;
-  font-weight: var(--fw-main-reg);
-  line-height: 120%;
-  color: var(--clr-primary-black);
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-h4 {
-  font-size: 24px;
-  font-weight: var(--fw-main-reg);
-  line-height: 28.8px;
-  color: var(--clr-primary-black);
-  margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 120px;
 }
 
 .backstage p {
@@ -182,6 +211,7 @@ h4 {
 .column {
   flex: 1;
   gap: 87px;
+  height: 405px;
 }
 
 .cards {
@@ -192,6 +222,101 @@ h4 {
 div.card {
   border: 1px solid #fa6f32;
   border-radius: 5px;
+}
+
+.zoo-name {
+  font-size: 16px;
+  font-weight: var(--fw-body-med);
+  line-height: 22.4px;
+  text-transform: uppercase;
+}
+
+.continent {
+  font-size: 15px;
+  font-weight: var(--fw-body-sm);
+  line-height: 18px;
+}
+
+button.arrow {
+  width: 62px;
+  height: 62px;
+  border: 1px solid var(--clr-primary-orange);
+  border-radius: 100px;
+}
+
+button.left {
+  position: absolute;
+  top: 414px;
+  left: 138px;
+}
+
+button.right {
+  position: absolute;
+  top: 414px;
+  right: 140px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 80px;
+}
+
+section.pick-feed {
+  background: var(--clr-accent-orange);
+  height: 1004px;
+  text-align: center;
+  margin-top: 100px;
+  padding-top: 69px;
+}
+
+section .background {
+  background: rgba(253, 253, 255, 0.52);
+  border-radius: 20px;
+  width: 1160px;
+  height: 835px;
+  margin: auto;
+  padding-top: 41px;
+}
+
+.orange-txt {
+  color: #fe9013;
+  margin-bottom: 6px;
+}
+
+.background p {
+  text-align: left;
+  padding-left: 99px;
+
+  color: var(--clr-primary-black);
+}
+p.large-txt {
+  font-size: 24px;
+  font-weight: var(--fw-main-reg);
+
+  line-height: 28.8px;
+}
+p.bold-txt {
+  font-size: 16px;
+  font-weight: var(--fw-body-med);
+
+  line-height: 20.8px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+p.main-txt {
+  font-size: 16px;
+  font-weight: var(--fw-main-reg);
+
+  line-height: 20.8px;
+  padding-right: 198px;
+  margin-top: 0;
+}
+
+.emergency-link {
+  color: var(--clr-primary-gray);
+  text-decoration: underline;
+  text-decoration-color: #fe9013;
 }
 
 .scroll::-webkit-scrollbar {
