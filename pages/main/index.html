@@ -20,6 +20,7 @@
           <ul class="nav-list">
             <li>
               <h1>
+                PetStory Online
                 <a href="#"
                   ><img
                     class="logo"
@@ -28,12 +29,17 @@
                 /></a>
               </h1>
             </li>
-            <li><a href="#">About</a></li>
+            <li><a class="active" href="#">About</a></li>
             <li><a href="#">Map</a></li>
             <li><a href="#">Zoos</a></li>
             <li><a href="/pages/donate/index.html">Donate</a></li>
             <li><a href="#">Contact us</a></li>
-            <li><a href="#">Designed by ©</a></li>
+            <li>
+              <a
+                href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online"
+                >Designed by ©</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -86,78 +92,98 @@
       </button>
       <div class="container cards">
         <div class="card">
-          <img src="/src/images/panda.png" alt="panda" />
+          <img class="animal" src="/src/images/panda.png" alt="panda" />
           <table>
-            <td style="width: 70%">
+            <td class="description-animal" style="width: 70%">
               <p class="zoo-name">Giant Pandas</p>
               <p class="continent">Native to Southwest China</p>
             </td>
             <td style="text-align: right">
-              <img src="/src/icons/banana-bamboo_icon.svg" alt="banana" />
+              <img
+                class="icon-food"
+                src="/src/icons/banana-bamboo_icon.svg"
+                alt="banana"
+              />
             </td>
           </table>
         </div>
 
         <div class="card">
-          <img src="/src/images/eagle.png" alt="eagle" />
+          <img class="animal" src="/src/images/eagle.png" alt="eagle" />
           <table>
-            <td style="width: 70%">
+            <td class="description-animal" style="width: 70%">
               <p class="zoo-name">Eagles</p>
               <p class="continent">Native to South America</p>
             </td>
             <td style="text-align: right">
-              <img src="/src/icons/meet-fish_icon.svg" alt="meat-fish" />
+              <img
+                class="icon-food"
+                src="/src/icons/meet-fish_icon.svg"
+                alt="meat-fish"
+              />
             </td>
           </table>
         </div>
 
         <div class="card">
-          <img src="/src/images/gorilla.png" alt="gorilla" />
+          <img class="animal" src="/src/images/gorilla.png" alt="gorilla" />
           <table>
-            <td style="width: 70%">
+            <td class="description-animal" style="width: 70%">
               <p class="zoo-name">Gorillas</p>
               <p class="continent">Native to Congo</p>
             </td>
             <td style="text-align: right">
-              <img src="/src/icons/banana-bamboo_icon.svg" alt="banana" />
+              <img
+                class="icon-food"
+                src="/src/icons/banana-bamboo_icon.svg"
+                alt="banana"
+              />
             </td>
           </table>
         </div>
 
         <div class="card">
-          <img src="/src/images/sloth.png" alt="sloth" />
+          <img class="animal" src="/src/images/sloth.png" alt="sloth" />
           <table>
-            <td style="width: 70%">
+            <td class="description-animal" style="width: 70%">
               <p class="zoo-name">Two-toed Sloth</p>
               <p class="continent">Mesoamerica, South America</p>
             </td>
             <td style="text-align: right">
-              <img src="/src/icons/banana-bamboo_icon.svg" alt="banana" />
+              <img
+                class="icon-food"
+                src="/src/icons/banana-bamboo_icon.svg"
+                alt="banana"
+              />
             </td>
           </table>
         </div>
 
         <div class="card">
-          <img src="/src/images/cheetah.png" alt="cheetah" />
+          <img class="animal" src="/src/images/cheetah.png" alt="cheetah" />
           <table>
-            <td style="width: 70%">
+            <td class="description-animal" style="width: 70%">
               <p class="zoo-name">Cheetahs</p>
               <p class="continent">Native to Africa</p>
             </td>
             <td style="text-align: right">
-              <img src="/src/icons/meet-fish_icon.svg" alt="meat-fish" />
+              <img
+                class="icon-food"
+                src="/src/icons/meet-fish_icon.svg"
+                alt="meat-fish"
+              />
             </td>
           </table>
         </div>
 
         <div class="card">
-          <img src="/src/images/penguin.png" alt="penguin" />
+          <img class="animal" src="/src/images/penguin.png" alt="penguin" />
           <table>
-            <td style="width: 70%">
+            <td class="description-animal" style="width: 70%">
               <p class="zoo-name">Penguins</p>
               <p class="continent">Native to Antarctica</p>
             </td>
-            <td style="text-align: right">
+            <td class="icon-food" style="text-align: right">
               <img src="/src/icons/meet-fish_icon.svg" alt="meat-fish" />
             </td>
           </table>
@@ -332,16 +358,36 @@
                   alt="PetStoryOnline"
               /></a>
             </li>
-            <li><button class="rectangle">Donate for volunteers</button></li>
-            <li><img src="/src/icons/facebook.svg" alt="facebook" /></li>
-            <li><img src="/src/icons/twitter.svg" alt="twitter" /></li>
-            <li><img src="/src/icons/instagram.svg" alt="instagram" /></li>
-            <li><img src="/src/icons/youtube.svg" alt="youtube" /></li>
+            <li>
+              <a href="/pages/donate/index.html"
+                ><button class="rectangle">Donate for volunteers</button></a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img src="/src/icons/facebook.svg" alt="facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/login"
+                ><img src="/src/icons/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <img src="/src/icons/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/">
+                <img src="/src/icons/youtube.svg" alt="youtube" />
+              </a>
+            </li>
           </ul>
         </div>
         <div class="footer-col">
           <ul class="nav-list-footer">
-            <li><a href="./index.html">About</a></li>
+            <li><a class="active" href="./index.html">About</a></li>
             <li><a href="#">Map</a></li>
             <li><a href="#">Zoos</a></li>
             <li><a href="#">Contact us</a></li>
@@ -351,7 +397,11 @@
         <div class="footer-col subscribe-col">
           <p class="large-txt">Subscribe to our news</p>
           <form action="submit">
-            <input class="input-email" type="email" value="Enter you email" />
+            <input
+              class="input-email"
+              type="email"
+              placeholder="Enter you email"
+            />
             <input class="input-btn" type="button" value="Submit" />
           </form>
           <p class="main-txt-light">
