@@ -179,7 +179,7 @@ ul.nav-list li:last-child {
 }
 
 div.main-slide {
-  background-image: url(/src/images/Giant\ Panda.png);
+  background-image: url(src/images/Giant\ Panda.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
