@@ -170,6 +170,7 @@ ul.nav-list {
   gap: 58px;
   font-size: 16px;
   font-weight: var(--fw-body-med);
+  padding-left: 0px;
 }
 
 ul.nav-list li {
@@ -177,7 +178,7 @@ ul.nav-list li {
 }
 
 ul.nav-list li:last-child {
-  margin-left: 230px;
+  margin-left: 380px;
   flex-shrink: 0;
 }
 
