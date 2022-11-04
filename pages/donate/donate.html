@@ -46,13 +46,12 @@
         </nav>
       </div>
     </header>
-    ]
+
     <img
       src="../../src/images/slider-panda-donate.png"
       alt="slider"
       class="background-img"
     />
-    ]
 
     <main>
       <div class="container">
@@ -70,7 +69,7 @@
         <h3 class="orange-txt">Donation Information</h3>
         <div class="pick-feed">
           <h2>Pick and feed a friend</h2>
-          <p>
+          <p class="regular">
             We know the animals bring you joy, and in these extraordinary times,
             we’re glad.
           </p>
@@ -80,26 +79,35 @@
                 src="../../src/icons/amount_of_days_donate.svg"
                 alt="amount"
               />
-              <small>Panda diet for the day.</small>
-              <div class="col">
-                <img src="../../src/icons/x_icon.svg" alt="" />
-              </div>
-              <div class="col">
-                <img src="../../src/icons/panda_widget1.png" alt="animal" />
+              <br />
+              <p class="small">Panda diet for the day.</p>
+            </div>
+            <div class="col">
+              <img src="../../src/icons/x_icon.svg" alt="" />
+            </div>
+            <div class="col">
+              <img src="../../src/icons/panda_widget1.png" alt="animal" />
+            </div>
+          </div>
+          <div class="form">
+            <p class="small">Amount</p>
+
+            <div class="bar-line">
+              <hr />
+              <div class="dots">
+                <div class="dot"><a href=""></a></div>
+                <div class="dot"><a href=""></a></div>
+                <div class="dot"><a href=""></a></div>
+                <div class="dot"><a href=""></a></div>
+                <div class="dot"><a href=""></a></div>
+                <div class="dot"><a href=""></a></div>
+                <div class="dot"><a href=""></a></div>
+                <div class="dot"><a href=""></a></div>
               </div>
             </div>
-            <small>Amount</small>
-            <div class="amount-bar"></div>
-            <ul class="bar">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+
             <ul class="amount">
+              <li>$5000</li>
               <li>$2000</li>
               <li>$1000</li>
               <li>$500</li>
@@ -108,16 +116,36 @@
               <li>$50</li>
               <li>$25</li>
             </ul>
+
+            <form action="">
+              <input
+                type="number"
+                placeholder="Another amount"
+                class="amount-input"
+                maxlength="4"
+              />
+              <img src="../../src/icons/dollar.svg" alt="dollar" />
+              <div class="radio">
+                <input
+                  type="radio"
+                  id="monthly"
+                  value="monthly"
+                  name="period"
+                />
+                <label for="monthly">Monthly</label>
+                <input
+                  type="radio"
+                  id="once"
+                  value="once"
+                  name="period"
+                  checked
+                />
+                <label for="once">Once</label>
+              </div>
+            </form>
           </div>
-          <input type="number" placeholder="Another amount      $" />
-          <div class="radio">
-            <input type="radio" id="monthly" value="monthly" name="period" />
-            <label for="monthly">Monthly</label>
-            <input type="radio" id="once" value="once" name="period" />
-            <label for="once">Once</label>
-          </div>
-          <button>Feed a friend now</button>
-          <small>Share with your friends on social networks </small>
+          <button class="default">Feed a friend now</button>
+          <p class="small center">Share with your friends on social networks</p>
         </div>
       </div>
     </main>
@@ -127,7 +155,7 @@
         <div class="footer-col">
           <ul class="social-links">
             <li>
-              <a href="./index.html"
+              <a href="../../index.html"
                 ><img
                   class="logo-link"
                   src="../../src/images/logo_footer.png"
@@ -135,7 +163,7 @@
               /></a>
             </li>
             <li>
-              <a href="pages/donate/donate.html"
+              <a href="../donate/donate.html"
                 ><button class="rectangle">Donate for volunteers</button></a
               >
             </li>
@@ -163,7 +191,7 @@
         </div>
         <div class="footer-col">
           <ul class="nav-list-footer">
-            <li><a class="active" href="./index.html">About</a></li>
+            <li><a href="./index.html">About</a></li>
             <li><a href="#">Map</a></li>
             <li><a href="#">Zoos</a></li>
             <li><a href="#">Contact us</a></li>
@@ -178,7 +206,12 @@
               type="email"
               placeholder="Enter you email"
             />
-            <input class="input-btn" type="button" value="Submit" />
+            <input
+              class="input-btn"
+              type="button"
+              value="Submit"
+              class="submit-btn"
+            />
           </form>
           <p class="main-txt-light">
             Designed by Alisa Samborskaya <br />
